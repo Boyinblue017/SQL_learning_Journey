@@ -1,0 +1,11 @@
+# Ignore data and envs
+# ignore all data by default but allow committed demo extracts in data/demo/
+/data/
+!/data/demo/
+!/data/demo/*
+C:\\data\\
+*.csv
+.env
+venv/
+__pycache__/
+.ipynb_checkpoints/
