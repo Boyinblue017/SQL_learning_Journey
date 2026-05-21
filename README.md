@@ -1,4 +1,4 @@
-# MySQL Learning Journey 🚀
+# MySQL Learning Journey 
 
 A 15-week structured journey documenting my learning experience with MySQL, SQL fundamentals, database design, querying, optimization, and modern database systems.
 
