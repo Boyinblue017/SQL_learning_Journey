@@ -73,5 +73,4 @@ This repository is both:
 ---
 
 ## Connect With Me
-Add your LinkedIn/GitHub links here.
-
+https://www.linkedin.com/in/gideon-otieno/
