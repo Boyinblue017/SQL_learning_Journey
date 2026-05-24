@@ -1,0 +1,34 @@
+-- 1. CREATE TABLE
+CREATE TABLE inventory (
+    game_id INT,
+    title VARCHAR(100),
+    price DECIMAL(5,2)
+);
+
+-- 2. ALTER TABLE - RENAME
+ALTER TABLE inventory RENAME TO games;
+
+-- 3. ALTER TABLE - MODIFY (Syntax may vary slightly by SQL dialect, e.g., MySQL vs Postgres)
+ALTER TABLE games MODIFY COLUMN price DECIMAL(10,2) NOT NULL; 
+-- Or alternative to add a column and drop it for the DROP practice:
+-- ALTER TABLE games ADD COLUMN temporary_code INT;
+-- ALTER TABLE games DROP COLUMN temporary_code;
+
+-- 5. INSERT
+INSERT INTO games (game_id, title, price) VALUES 
+(1, 'Super Mario Bros', 30.00),
+(2, 'The Legend of Zelda', 45.00),
+(3, 'Sonic the Hedgehog', 25.00);
+
+-- 6. UPDATE
+UPDATE games 
+SET price = 60.00 
+WHERE title = 'The Legend of Zelda';
+
+-- 7. DELETE
+DELETE FROM games 
+WHERE title = 'Sonic the Hedgehog';
+
+-- 8. TRUNCATE
+TRUNCATE TABLE games;
+

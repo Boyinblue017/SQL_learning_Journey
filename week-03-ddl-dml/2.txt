@@ -1,0 +1,19 @@
+🎮 The Scenario: Managing "Pixel Arcade"
+Phase 1: The DDL Setup (Building the Database)
+The Story: You’ve been hired by Pixel Arcade to build their inventory system.
+Task 1 (CREATE TABLE): Create a table named inventory to store the shop's video games. It needs three columns: game_id (integer), title (text), and price (decimal).
+Task 2 (ALTER TABLE - RENAME): The owner decides "inventory" sounds too boring. Rename the table to games.
+Task 3 (ALTER TABLE - MODIFY): You realize the price column doesn't account for massive collector's items. Change the data type or constraint of the price column so it can support larger numbers or ensure it cannot be empty (e.g., NOT NULL).
+Task 4 (ALTER TABLE - DROP): (Wait for Phase 2's data entry to do this one, or simulate adding and dropping a temporary column like old_stock_id).
+Phase 2: The DML Action (Managing the Games)
+The Story: The store is officially open, and stock is arriving!
+Task 5 (INSERT): Add three classic games to your games table:
+Super Mario Bros ($30.00)
+The Legend of Zelda ($45.00)
+Sonic the Hedgehog ($25.00)
+Task 6 (UPDATE): The Legend of Zelda has become rare! Update its price to $60.00.
+Task 7 (DELETE): A customer just bought the copy of Sonic the Hedgehog. Delete this specific game from the table.
+Phase 3: The DDL Clean-Up (The Grand Reset)
+The Story: The owner decides to pivot the business completely and sell digital codes instead of physical cartridges.
+Task 8 (TRUNCATE): Wipe out all the current rows of game data instantly to clear the table, but keep the actual games table structure intact for future use
+

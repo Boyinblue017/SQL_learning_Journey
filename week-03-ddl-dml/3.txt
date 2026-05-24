@@ -1,0 +1,50 @@
+-- ==========================================
+-- PHASE 1: DDL COMMANDS
+-- ==========================================
+
+-- 1. CREATE TABLE
+CREATE TABLE staff_draft (
+    emp_id INT,
+    full_name VARCHAR(100),
+    department VARCHAR(50),
+    monthly_salary INT
+);
+
+-- 2. ALTER TABLE - RENAME
+ALTER TABLE staff_draft RENAME TO employees;
+
+-- 3. ALTER TABLE - MODIFY (Standard MySQL syntax shown here)
+ALTER TABLE employees MODIFY COLUMN monthly_salary DECIMAL(10,2);
+
+-- 4. ALTER TABLE - ADD & DROP
+ALTER TABLE employees ADD COLUMN desk_number INT; -- (Setup for the drop)
+ALTER TABLE employees DROP COLUMN desk_number;
+
+
+-- ==========================================
+-- PHASE 2: DML COMMANDS
+-- ==========================================
+
+-- 5. INSERT
+INSERT INTO employees (emp_id, full_name, department, monthly_salary) VALUES 
+(101, 'Alice Smith', 'IT', 5000.00),
+(102, 'Bob Jones', 'Marketing', 4200.00),
+(103, 'Charlie Brown', 'Sales', 4000.00);
+
+-- 6. UPDATE
+UPDATE employees 
+SET monthly_salary = 5500.00 
+WHERE emp_id = 101;
+
+-- 7. DELETE
+DELETE FROM employees 
+WHERE emp_id = 103;
+
+
+-- ==========================================
+-- PHASE 3: DDL CLEAN-UP
+-- ==========================================
+
+-- 8. TRUNCATE
+TRUNCATE TABLE employees;
+
