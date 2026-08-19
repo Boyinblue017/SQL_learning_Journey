@@ -1,0 +1,57 @@
+---
+description: >
+  Currently active SQL notebook cell. Use this to scope edits to the correct
+  cell block. Do NOT modify other cells unless explicitly asked.
+globs:
+  - "**/*.sql"
+  - "**/*.sqlnb"
+alwaysApply: false
+---
+
+# Active Cell Context
+
+**File:** `c:\Users\gomas\OneDrive\Desktop\MySQLJourney\SQL_learning_Journey\week-15-nosql-olap-newsql\The Movie Database\SQL_Exam.ipynb`  
+**Cell:** 20 of 39  
+**Connection:** None  
+
+
+## Current Cell SQL (Cell 20)
+
+```sql
+%%sql
+# Add your code here
+```
+
+## Available Variables
+
+_None defined_
+
+## Surrounding Cells
+
+**Previous cell (19):**
+```sql
+### Question 5
+
+How many movies are there that are both in the "Thriller" genre and contain the word “love” anywhere in the keywords?
+
+
+**Options:**
+ - 48
+ - 38
+ - 14
+ - 1
+```
+
+**Next cell (21):**
+```sql
+### Question 6
+
+How many movies are there that were released between 1 August 2006 ('2006-08-01') and 1 October 2009 ('2009-10-01') that have a popularity score of more than 40 and a budget of less th…
+```
+
+## Editing Rules
+
+- Only edit **Cell 20** unless explicitly asked to change another cell
+- Preserve `-- %%` cell boundary markers when editing
+- Preserve `-- @var` and `-- @connection` directives
+- Use `{{variableName}}` syntax to reference defined variables
